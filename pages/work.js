@@ -1,11 +1,12 @@
 import React from 'react'
 import Header from '../components/Header'
+import WorkMain from '../components/WorkMain'
 
 const work = () => {
     return (
         <div>
             <Header />
-            This is the Work
+            <WorkMain />
         </div>
     )
 }
