@@ -1,12 +1,18 @@
+// Dynamic Routing and this page displaying more detail
+
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useRouter } from 'next/router'
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 const id = () => {
     const router = useRouter()
     const { id } = router.query
 
     const [project, setproject] = useState([])
+
+    // Data is fetching from external API (jasonnplaceholder)
 
     useEffect(() => {
         async function fetchData() {
@@ -21,7 +27,7 @@ const id = () => {
     }, [])
     return (
         <div>
-            {/* {project.title} */}
+            <Header />
             <section class="text-gray-600 body-font overflow-hidden">
                 <div class="container px-5 py-24 mx-auto">
                     <div class="lg:w-4/5 mx-auto flex flex-wrap">
@@ -34,6 +40,7 @@ const id = () => {
                     </div>
                 </div>
             </section>
+            {/* <Footer /> */}
 
         </div>
     )

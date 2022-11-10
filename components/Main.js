@@ -26,7 +26,7 @@ export default function Main() {
           ></img>
         </div>
       </div>
-      <section className="mx-auto">
+      {/* <section className="mx-auto">
         <div className="container px-5 mx-auto lg:px-24 ">
           <div className="flex flex-col w-full mb-4 text-left lg:text-center">
             <h1 className="mb-8 text-2xl Avenir font-semibold text-black">
@@ -64,7 +64,7 @@ export default function Main() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <div className="grr max-w-7xl pt-20 mx-auto text-center">
         <h1 className="mb-8 text-6xl Avenir font-semibold text-gray-900">
 
